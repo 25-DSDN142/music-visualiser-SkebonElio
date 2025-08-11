@@ -1,43 +1,89 @@
 
-// vocal, drum, bass, and other are volumes ranging from 0 to 100
-function draw_one_frame(words, vocal, drum, bass, other, counter) {
-  background(20)
-  textFont('Verdana'); // please use CSS safe fonts
-  rectMode(CENTER)
-  textSize(24);
-  
-   let bar_spacing = height / 10;
-   let bar_height = width / 12;
-   let bar_pos_x = width / 2;
+// // vocal, drum, bass, and other are volumes ranging from 0 to 100
+// function draw_one_frame(words, vocal, drum, bass, other, counter) {
+//   background(20)
+//   textFont('Verdana'); // please use CSS safe fonts
+//   rectMode(CENTER)
+//   textSize(24);
  
-// changes 
-   // vocal bar is red
-   fill(200, 0, 0);
-   rect(bar_pos_x, height / 2 + 1 * bar_spacing, 4 * vocal, bar_height);
-   fill(0);
-   text("vocals", bar_pos_x, height / 2 + 1 * bar_spacing + 8);
- 
-   // drum bar is green
-   fill(0, 200, 0);
-   rect(bar_pos_x, height / 2 + 2 * bar_spacing, 4 * drum, bar_height);
-   fill(0);
-   text("drums", bar_pos_x, height / 2 + 2 * bar_spacing + 8);
- 
-   // bass bar is blue
-   fill(50, 50, 240);
-   rect(bar_pos_x, height / 2 + 3 * bar_spacing, 4 * bass, bar_height);
-   fill(0);
-   text("bass", bar_pos_x, height / 2 + 3 * bar_spacing + 8);
- 
-   // other bar is white
-   fill(200, 200, 200);
-   rect(bar_pos_x, height / 2 + 4 * bar_spacing, 4 * other, bar_height);
-   fill(0);
-   text("other", bar_pos_x, height / 2 + 4 * bar_spacing + 8);
-   fill(255, 255, 0);
- 
-   // display "words"
-   textAlign(CENTER);
-   textSize(vocal);
-   text(words, width/2, height/3);
-}
+// // changes
+// let angle = frameCount*(drum*0.01);
+// let O1 = 60;
+// let O3Size = map(other, 0, 100, 50, 100);
+// let P2Size = map(bass, 0, 90, 45, 90);
+// let Q4Size = map(vocal, 0, 80, 40, 80);
+// let Smol1 = map(drum, 0, 20, 10, 20);
+// //  loop let  //
+
+// //  -----  //
+//  Q4Size = map(vocal, 0, 100, 50, 100);
+// fill(255);
+//  square(70,O1,Q4Size);
+   
+// fill(205);
+//  square(170,O1,Q4Size);
+
+// fill(155);
+//  square(270,O1,Q4Size);
+
+// fill(105);
+//  square(370,O1,Q4Size);
+
+// fill(55);
+//  square(470,O1,Q4Size);
+
+// p2Size = map(bass, 0, 100, 40, 100);
+// fill(35);
+//  square(70,O1,P2Size);
+   
+// fill(85);
+//  square(170,O1,P2Size);
+
+// fill(135);
+//  square(270,O1,P2Size);
+
+// fill(185);
+//  square(370,O1,P2Size);
+
+// fill(235);
+//  square(470,O1,P2Size);
+
+//  O3Size = map(other, 0, 100, 50, 100);
+// fill(255);
+//  ellipse(70,O1,O3Size);
+   
+// fill(205);
+//  ellipse(170,O1,O3Size);
+
+// fill(155);
+//  ellipse(270,O1,O3Size);
+
+// fill(105);
+//  ellipse(370,O1,O3Size);
+
+// fill(55);
+//  ellipse(470,O1,O3Size);
+
+// ////
+// Smol1 = map(drum, 0, 20, 10, 20);
+//  fill(235);
+//  ellipse(70,O1,Smol1);
+   
+//  fill(185);
+//  ellipse(170,O1,Smol1);
+
+//  fill(135);
+//  ellipse(270,O1,Smol1);
+
+//  fill(85);
+//  ellipse(370,O1,Smol1);
+
+//  fill(35);
+//  ellipse(470,O1,Smol1);
+
+//  //------------------//
+
+
+// // OvalY = OvalY +1;
+
+// }
